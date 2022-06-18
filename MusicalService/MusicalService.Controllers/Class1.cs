@@ -1,4 +1,4 @@
-﻿namespace MusicalService.Identity
+﻿namespace MusicalService.Controllers
 {
     public class Class1
     {

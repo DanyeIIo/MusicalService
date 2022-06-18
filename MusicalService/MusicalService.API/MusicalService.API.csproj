@@ -7,11 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Diagrams\**" />
+    <Content Remove="Diagrams\**" />
+    <EmbeddedResource Remove="Diagrams\**" />
+    <None Remove="Diagrams\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Diagrams\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

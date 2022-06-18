@@ -3,15 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "musicalservice", "client\musicalservice.esproj", "{5A496A22-7766-443A-AF7F-7E319CAC35FF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{6F5D5D09-C459-447C-AF0F-8C561424F30C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientApp", "ClientApp", "{C084D5FF-AEDD-46AE-995D-AAF2F09C3232}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MusicalService", "MusicalService", "{6F5D5D09-C459-447C-AF0F-8C561424F30C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicalService.API", "MusicalService.API\MusicalService.API.csproj", "{6D00F69A-388C-4022-80F6-CF6655856A70}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicalService.Infrastructure.Adapters.DAL.PostgreSQL", "MusicalService.DAL\MusicalService.Infrastructure.Adapters.DAL.PostgreSQL.csproj", "{9100FA0B-1F2F-4457-9A9D-0F750679BA3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicalService.Infrastructure.Adapters.DataAccess.PostgreSQL", "MusicalService.DAL\MusicalService.Infrastructure.Adapters.DataAccess.PostgreSQL.csproj", "{9100FA0B-1F2F-4457-9A9D-0F750679BA3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrustructure adapters", "Infrustructure adapters", "{1BB0F7D0-5EC2-42C8-B6C2-967700341730}"
 EndProject
@@ -23,22 +17,26 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicalService.Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicalService.Domain", "MusicalService.Domain\MusicalService.Domain.csproj", "{1CFCEEF1-4260-4479-A9D2-CE4C8F0CDA5A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicalService.Controllers", "MusicalService.Controllers\MusicalService.Controllers.csproj", "{7F86A8C1-5C04-4865-9F91-8EC840420E84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicalService.Utils", "MusicalService.Utils\MusicalService.Utils.csproj", "{50B2CE0A-C99A-443C-A80B-CCC507B64DA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{18B1D887-E73B-4392-A486-31DDD2B965F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalService.Application.UnitTests", "MusicalService.Application.UnitTests\MusicalService.Application.UnitTests.csproj", "{45BB4A3A-0B6D-4E6C-B7A6-524789687FD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalService.Infrastructure.UnitTests", "MusicalService.Infrastructure.UnitTests\MusicalService.Infrastructure.UnitTests.csproj", "{2F9686FB-8589-450F-A9BD-1B9EEE61A584}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application ports", "Application ports", "{6155A0CE-3402-4231-BFF0-7D227E126985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicalService.Application.Ports.DataAccess.PostgreSql", "MusicalService.Application.Ports.DataAccess.PostgreSql\MusicalService.Application.Ports.DataAccess.PostgreSql.csproj", "{3E401164-CB3F-4381-B769-14D257925441}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5A496A22-7766-443A-AF7F-7E319CAC35FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A496A22-7766-443A-AF7F-7E319CAC35FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A496A22-7766-443A-AF7F-7E319CAC35FF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{5A496A22-7766-443A-AF7F-7E319CAC35FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A496A22-7766-443A-AF7F-7E319CAC35FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A496A22-7766-443A-AF7F-7E319CAC35FF}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{6D00F69A-388C-4022-80F6-CF6655856A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D00F69A-388C-4022-80F6-CF6655856A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D00F69A-388C-4022-80F6-CF6655856A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D00F69A-388C-4022-80F6-CF6655856A70}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9100FA0B-1F2F-4457-9A9D-0F750679BA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9100FA0B-1F2F-4457-9A9D-0F750679BA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9100FA0B-1F2F-4457-9A9D-0F750679BA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,20 +53,43 @@ Global
 		{1CFCEEF1-4260-4479-A9D2-CE4C8F0CDA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CFCEEF1-4260-4479-A9D2-CE4C8F0CDA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CFCEEF1-4260-4479-A9D2-CE4C8F0CDA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F86A8C1-5C04-4865-9F91-8EC840420E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F86A8C1-5C04-4865-9F91-8EC840420E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F86A8C1-5C04-4865-9F91-8EC840420E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F86A8C1-5C04-4865-9F91-8EC840420E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B2CE0A-C99A-443C-A80B-CCC507B64DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B2CE0A-C99A-443C-A80B-CCC507B64DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B2CE0A-C99A-443C-A80B-CCC507B64DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B2CE0A-C99A-443C-A80B-CCC507B64DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45BB4A3A-0B6D-4E6C-B7A6-524789687FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BB4A3A-0B6D-4E6C-B7A6-524789687FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BB4A3A-0B6D-4E6C-B7A6-524789687FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BB4A3A-0B6D-4E6C-B7A6-524789687FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9686FB-8589-450F-A9BD-1B9EEE61A584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9686FB-8589-450F-A9BD-1B9EEE61A584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9686FB-8589-450F-A9BD-1B9EEE61A584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9686FB-8589-450F-A9BD-1B9EEE61A584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E401164-CB3F-4381-B769-14D257925441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E401164-CB3F-4381-B769-14D257925441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E401164-CB3F-4381-B769-14D257925441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E401164-CB3F-4381-B769-14D257925441}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5A496A22-7766-443A-AF7F-7E319CAC35FF} = {C084D5FF-AEDD-46AE-995D-AAF2F09C3232}
-		{C084D5FF-AEDD-46AE-995D-AAF2F09C3232} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
-		{6D00F69A-388C-4022-80F6-CF6655856A70} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
 		{9100FA0B-1F2F-4457-9A9D-0F750679BA3C} = {1BB0F7D0-5EC2-42C8-B6C2-967700341730}
 		{1BB0F7D0-5EC2-42C8-B6C2-967700341730} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
 		{95D81DFE-9CFF-4B8C-9A5B-D868DAC3C3F5} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
 		{B8D55BB7-7ECB-472A-82DC-17D9755FE368} = {95D81DFE-9CFF-4B8C-9A5B-D868DAC3C3F5}
 		{FF0C95E2-FFDC-4337-A4A0-9C8F59071AA2} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
 		{1CFCEEF1-4260-4479-A9D2-CE4C8F0CDA5A} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
+		{7F86A8C1-5C04-4865-9F91-8EC840420E84} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
+		{50B2CE0A-C99A-443C-A80B-CCC507B64DA3} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
+		{45BB4A3A-0B6D-4E6C-B7A6-524789687FD8} = {18B1D887-E73B-4392-A486-31DDD2B965F1}
+		{2F9686FB-8589-450F-A9BD-1B9EEE61A584} = {18B1D887-E73B-4392-A486-31DDD2B965F1}
+		{6155A0CE-3402-4231-BFF0-7D227E126985} = {6F5D5D09-C459-447C-AF0F-8C561424F30C}
+		{3E401164-CB3F-4381-B769-14D257925441} = {6155A0CE-3402-4231-BFF0-7D227E126985}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F9D5C87-D500-49DE-825A-9BD3B704E640}

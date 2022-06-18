@@ -1,9 +1,9 @@
 ﻿using MusicalService.Domain.DatabaseEntities.Domain;
 
 namespace MusicalService.Domain.DatabaseEntities.Identity;
-public sealed class SexEntity : IEntity, IUniqueIdentifier<byte>, IName
+public sealed class SexEntity : IEntity, IUniqueIdentifier<int>, IName
 {
-    public byte Id { get; set; }
+    public int Id { get; set; }
 
     public string Name { get; set; }
 
